@@ -3,6 +3,8 @@ import "./Products.css";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import ProductItem from "./ProductItem";
 import CartItem from "./CartItem";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default class Products extends Component {
     constructor(props) {
@@ -34,6 +36,11 @@ export default class Products extends Component {
         this.setState({
             shoppingCart: [...this.state.shoppingCart, findProduct],
         });
+
+        toast.success(`${findProduct.name} Added To Cart! `, {
+            position: "top-right",
+            autoClose: 2000,
+        });
     }
 
     removeCartItemHandler(productId) {
@@ -41,8 +48,17 @@ export default class Products extends Component {
             return item.id !== productId;
         });
 
+        let findProduct = this.state.products.find((item) => {
+            return item.id === productId;
+        });
+
         this.setState({
             shoppingCart: findIndexProduct,
+        });
+
+        toast.error(`${findProduct.name} Removed Cart! `, {
+            position: "top-right",
+            autoClose: 1000,
         });
     }
 

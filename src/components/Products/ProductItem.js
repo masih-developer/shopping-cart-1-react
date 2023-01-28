@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./ProductItem.css";
 import { FiShoppingCart } from "react-icons/fi";
-
 export default class ProductItem extends Component {
     addProductHandler(productId) {
         this.props.addProduct(productId);

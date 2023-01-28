@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Header from "./components/Header/Header";
 import Products from "./components/Products/Products";
+import { ToastContainer } from "react-toastify";
 
 export default class App extends Component {
     render() {
@@ -8,6 +9,7 @@ export default class App extends Component {
             <>
                 <Header />
                 <Products />
+                <ToastContainer />
             </>
         );
     }
