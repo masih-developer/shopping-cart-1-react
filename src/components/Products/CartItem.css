@@ -1,0 +1,26 @@
+.cart-table tbody tr img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.cart__remove-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cart__remove-btn svg {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+}
