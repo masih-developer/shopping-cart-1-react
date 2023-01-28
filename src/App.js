@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Header from "./components/Header/Header";
+import Header from "./components/layout/Header/Header";
 import Products from "./components/Products/Products";
 import { ToastContainer } from "react-toastify";
 

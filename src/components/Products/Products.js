@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "./Products.css";
-import SectionTitle from "../SectionTitle/SectionTitle";
-import ProductItem from "./ProductItem";
-import CartItem from "./CartItem";
+import SectionTitle from "../common/SectionTitle/SectionTitle";
+import ProductItem from "./ProductItem/ProductItem";
+import CartItem from "./CartItem/CartItem";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
